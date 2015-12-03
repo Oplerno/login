@@ -1,0 +1,12 @@
+example_id                                              | status | run_time        |
+------------------------------------------------------- | ------ | --------------- |
+./spec/controllers/saml_idp_controller_spec.rb[1:1]     | passed | 1.54 seconds    |
+./spec/controllers/saml_idp_controller_spec.rb[1:2:1]   | failed | 0.01631 seconds |
+./spec/controllers/saml_idp_controller_spec.rb[1:2:2]   | failed | 0.01616 seconds |
+./spec/controllers/saml_idp_controller_spec.rb[1:2:3]   | failed | 0.05975 seconds |
+./spec/controllers/saml_idp_controller_spec.rb[1:2:4]   | failed | 0.01619 seconds |
+./spec/controllers/saml_idp_controller_spec.rb[1:2:5]   | failed | 0.1019 seconds  |
+./spec/controllers/saml_idp_controller_spec.rb[1:3:1:1] | failed | 0.00342 seconds |
+./spec/controllers/saml_idp_controller_spec.rb[1:3:1:2] | failed | 0.00196 seconds |
+./spec/controllers/saml_idp_controller_spec.rb[1:3:2:1] | failed | 0.00733 seconds |
+./spec/controllers/saml_idp_controller_spec.rb[1:3:2:2] | failed | 0.00356 seconds |

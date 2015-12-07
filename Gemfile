@@ -38,6 +38,7 @@ gem 'responders'
 gem 'haml-rails'
 gem 'ruby-saml', '>= 0.8.2'
 gem 'ruby-saml-idp'
+gem 'bootstrap-sass', '~> 3.3.6'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

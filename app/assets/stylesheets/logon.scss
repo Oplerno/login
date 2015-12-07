@@ -1,0 +1,21 @@
+@mixin border-radius($radius: 1px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.box {
+  min-height: 200px;
+}
+
+.background {
+  background-color: #f1f1f1;
+  border: medium dashed #3d3d3d;
+  @include border-radius(20px);  
+}
+
+.bottom-10 { margin-bottom: 10px; }
+.bottom-50 { margin-bottom: 50px; }
+
+.top-10 { margin-top: 10px; }
+.top-50 { margin-top: 50px; }

@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title OplernoLogin
+    %title Oplerno
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
@@ -10,4 +10,29 @@
     = stylesheet_link_tag "https://www.authy.com/form.authy.min.css"
     = javascript_include_tag "devise_authy.js"
   %body
-    = yield
+    .top-50
+    .horibox.container
+      .row
+        .box.col-lg-3.col-md-3.col-sm-2.col-xs-1
+        .box.background.col-lg-6.col-md-6.col-sm-8.col-xs-10
+          .topbar.pull-left
+            %img(src='https://logon.oplerno.com/assets/OplernoLogoLarge.png' height='80')
+          .title
+            .h2
+              - if controller_name == 'sessions'
+                Sign in
+              - if controller_name == 'registrations'
+                Sign up
+              - if devise_mapping.recoverable? && controller_name == 'passwords' && controller_name != 'registrations'
+                Forgot your password?
+              - if controller_name == 'confirmations'
+                Confirmation
+              - if controller_name == 'unlocks'
+                Unlock
+          .main
+          .clearfix
+            = yield
+        .box.col-lg-3.col-md-3.col-sm-2.col-xs-1
+
+
+

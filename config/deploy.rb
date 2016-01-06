@@ -4,6 +4,22 @@ lock '3.2.1'
 set :application, 'Oplerno'
 set :repo_url, 'git@github.com:Oplerno/login.git'
 
+set :bundle_jobs, 4
+set :bundle_binstubs, -> { shared_path.join('bin') }
+
+set :linked_files, %w{config/database.yml} #config/newrelic.yml}
+set :linked_dirs, %w{
+  bin
+  log
+  tmp/pids
+  tmp/cache
+  tmp/sockets
+  vendor/bundle
+  public/system
+  config/strongbox
+  config/saml
+}
+
 namespace :deploy do
 
   desc 'Restart application'

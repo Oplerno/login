@@ -56,3 +56,4 @@ bower.json
 ssl
 tags
 bin
+config/database.yml

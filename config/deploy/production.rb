@@ -7,6 +7,8 @@ set :ssh_options, {
   auth_methods: %w(publickey),
 }
 
+set :rails_env, 'production'
+
 set :default_env, {
   'DEVISE_SECRET' => ENV['DEVISE_SECRET'],
   'DEVISE_PEPPER' => ENV['DEVISE_PEPPER'],

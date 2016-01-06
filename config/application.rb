@@ -10,6 +10,9 @@ module OplernoLogin
   class Application < Rails::Application
     # Use the responders controller from the responders gem
     config.app_generators.scaffold_controller :responders_controller
+    config.to_prepare do
+      Devise::Mailer.layout 'email' # email.haml
+    end
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
